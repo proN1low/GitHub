@@ -7,4 +7,4 @@ osszeg += ketszaz
 otszaz = int(input("Ötszázas (db): ")) * 500
 osszeg += otszaz
 
-print(f'{osszeg} Ft a beírt pénz összege.')
+print(f'Összeg: {osszeg} Ft')
