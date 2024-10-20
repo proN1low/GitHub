@@ -1,0 +1,1 @@
+adatok = input("Adjon meg egy nevet és egy születési évet: ")

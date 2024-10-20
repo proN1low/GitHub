@@ -1,13 +1,22 @@
+"""
+Egy függvényt tesztelünk, amely két szám közül adja vissza a kisebb dupláját.
+Írj egy függvényt "kisebb_dupla néven, amely két számot kap paraméterül és visszaadja a kisebb szám dupláját.
+"""
+
+# Egy lehetséges megoldás:
+
+# Tájékoztatjuk a felhasználót a program működéséről
 print("Egy függvényt tesztelünk, amely két szám közül adja vissza a kisebb dupláját.")
 
-def kisebb_dupla():
-    elso = int(input("Adj meg egy számot: "))
-    masodik = int(input("Adj meg még egy számot: "))
-    if elso < masodik:
-        kisebb_dupla = elso*2
-    if masodik < elso:
-        kisebb_dupla = masodik*2
-    if elso == masodik:
-        print("A két szám megegyezik.")
-    print(f'A két szám közül a kisebb duplája: {kisebb_dupla}')
-kisebb_dupla()
+# Definiáljuk a függvényt
+def kisebb_dupla(x, y):
+    print(f'A két szám közül a kisebb: ', min(x, y))
+    return min(x, y) * 2
+
+# Ez itt a tesztelés:
+# Bekérjük a két számot és egyből valós számítpussá (float) is alakítjuk a változókat
+num1 = float(input("Adj meg egy számot: "))
+num2 = float(input("Adj meg még egy számot: "))
+
+# Teszteljük a függvényt
+print(f'A két szám közül a kisebb duplája: ', kisebb_dupla(num1, num2))
